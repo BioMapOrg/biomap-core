@@ -1,6 +1,5 @@
 attrs==18.2.0
 backcall==0.1.0
-biomap-core==0.0.42
 bleach==3.0.2
 certifi==2018.10.15
 chardet==3.0.4
