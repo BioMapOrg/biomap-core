@@ -3,6 +3,6 @@
 SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 ROOT=$SCRIPTDIR/..
 
-rm -r $ROOT/biomap_core.egg-info
-rm -r $ROOT/build
-rm -r $ROOT/dist
+rm -rf $ROOT/biomap_core.egg-info
+rm -rf $ROOT/build
+rm -rf $ROOT/dist

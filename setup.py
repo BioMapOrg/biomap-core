@@ -2,26 +2,26 @@
 Install script for biomap-core
 '''
 
-from setuptools import setup
+import setuptools
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-setup(
+setuptools.setup(
     name='biomap-core',
-    version='0.0.42',
+    version='0.0.49',
     author='Sebastian Winkler',
     author_email='winkler@informatik.uni-tuebingen.de',
     description='BioMap core interfaces',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/biomap.io',
-    packages=['biomap.core'],
+    url='https://github.com/BioMapOrg/biomap-core',
+    packages=setuptools.find_packages(),
     data_files=[
         ('schema', ['schema/mapper_definition_schema.json'])
     ],
     install_requires=[
-        'jsonschema',
+        'jsonschema==2.6.0',
         'PyYAML'
     ],
     classifiers=[
